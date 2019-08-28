@@ -6,6 +6,8 @@ public class FirstJavaClassFile {
 	
 		System.out.println("Welcome to Edureka's Instructor led Training conducted by Abhresh Sugandhi");
 
+		System.out.println("Hi");
+		
 	}
 
 }
