@@ -45,7 +45,13 @@ public class Facebook {
 			*/
 		
 			// CSS
+			//driver.findElement(By.cssSelector("#u_0_6")).click();
+			
+			//driver.findElement(By.cssSelector("#content > div > div > div > div > div._5iyz.rfloat._ohf > div > div.pvl._52lp._59d- > div.mbs._52lq.fsl.fwb.fcb > span")).click();
 		
+			//Xpath
+			driver.findElement(By.xpath("//*[@id=\"u_0_6\" or @id=\"u_0_9\"]")).click();
+	
 	}
 
 }
