@@ -10,9 +10,9 @@ public class ErrorValidation {
 	public static void main(String[] args) {
 
 		// Open Browser
-		System.setProperty("webdriver.chrome.driver", "F:\\Training\\Installation_stuff\\ExeFiles\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nikasio\\Box\\Laptop Space\\Training\\Installation_stuff\\BrowserDrivers\\chromedriver_76.exe");
 		WebDriver driver = new ChromeDriver();
-
+		
 		driver.get("https://www.naukri.com/nlogin/login");
 		
 		driver.findElement(By.id("usernameField")).click();
@@ -21,7 +21,11 @@ public class ErrorValidation {
 		
 		WebElement errmsg = driver.findElement(By.id("usernameField_err"));
 		
-		boolean ErrorMessage = errmsg.equals("Email ID/Username cannot be left blank");
+		String Err = errmsg.getText();
+		
+		System.out.println(Err);
+		
+		boolean ErrorMessage = Err.equals("Email ID/Username cannot be left blank");
 		
 		System.out.println(ErrorMessage);
 		

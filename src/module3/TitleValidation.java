@@ -8,7 +8,7 @@ public class TitleValidation {
 	public static void main(String[] args) {
 
 		// Open Browser
-		System.setProperty("webdriver.chrome.driver", "F:\\Training\\Installation_stuff\\ExeFiles\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nikasio\\Box\\Laptop Space\\Training\\Installation_stuff\\BrowserDrivers\\chromedriver_76.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		//Open the AUT
@@ -19,7 +19,7 @@ public class TitleValidation {
 		System.out.println(Apptitle);
 		
 		//validate the actual title VS Expected Title
-		boolean Result = Apptitle.equals("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
+		boolean Result = Apptitle.equals("Amazon.in");
 		
 		System.out.println(Result);
 	}

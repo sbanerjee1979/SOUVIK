@@ -10,12 +10,12 @@ public class ElementValidation {
 	public static void main(String[] args) {
 
 		// Open Browser
-		System.setProperty("webdriver.chrome.driver", "F:\\Training\\Installation_stuff\\ExeFiles\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nikasio\\Box\\Laptop Space\\Training\\Installation_stuff\\BrowserDrivers\\chromedriver_76.exe");
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://seleniumautomationpractice.blogspot.com/2017/10/functionisogramigoogleanalyticsobjectri.html");
 		
-		driver.findElement(By.id("profession-1")).click();
+		//driver.findElement(By.id("profession-1")).click();
 		
 		WebElement checkBox = driver.findElement(By.id("profession-1"));
 		
