@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="9" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21195" started-at="2019-09-09T16:57:23Z" finished-at="2019-09-09T16:57:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21195" started-at="2019-09-09T16:57:23Z" finished-at="2019-09-09T16:57:45Z">
+      <class name="module6.Enabled">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:module6.Enabled@7e2d773b]" name="OpenBrowser" duration-ms="10337" started-at="2019-09-09T16:57:23Z" finished-at="2019-09-09T16:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="OpenAUT()[pri:1, instance:module6.Enabled@7e2d773b]" name="OpenAUT" duration-ms="4359" started-at="2019-09-09T16:57:34Z" finished-at="2019-09-09T16:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAUT -->
+        <test-method status="PASS" signature="ClickRegisterLink()[pri:6, instance:module6.Enabled@7e2d773b]" name="ClickRegisterLink" duration-ms="2379" started-at="2019-09-09T16:57:38Z" finished-at="2019-09-09T16:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickRegisterLink -->
+        <test-method status="PASS" signature="ClickContactUsLink()[pri:7, instance:module6.Enabled@7e2d773b]" name="ClickContactUsLink" duration-ms="1101" started-at="2019-09-09T16:57:41Z" finished-at="2019-09-09T16:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickContactUsLink -->
+        <test-method status="PASS" signature="ClickSupportLink()[pri:8, instance:module6.Enabled@7e2d773b]" name="ClickSupportLink" duration-ms="1162" started-at="2019-09-09T16:57:42Z" finished-at="2019-09-09T16:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickSupportLink -->
+        <test-method status="PASS" signature="ClickSignOnLink()[pri:9, instance:module6.Enabled@7e2d773b]" name="ClickSignOnLink" duration-ms="1067" started-at="2019-09-09T16:57:43Z" finished-at="2019-09-09T16:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickSignOnLink -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:20, instance:module6.Enabled@7e2d773b]" name="CloseBrowser" duration-ms="656" started-at="2019-09-09T16:57:44Z" finished-at="2019-09-09T16:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- module6.Enabled -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
