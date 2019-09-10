@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" parallel="false">
-  <test name="Test">
-    <classes>
-      <class name="module6.GitHubLogin"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Parallel_Execution_GitHubLogin">
+	<test name="Parallel_Execution_Testing_GitHubLogin1">
+		<parameter name="B" value="Firefox"></parameter>
+		<parameter name="Username" value="tabhresh@gmail.com"></parameter>
+		<parameter name="Password" value="edureka123"></parameter>
+		<classes>
+			<class name="module6.GitHubLogin_CrossBrowser" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Parallel_Execution_Testing_GitHubLogin2">
+		<parameter name="Username" value="tabhresh@gmail.com"></parameter>
+		<parameter name="Password" value="edureka123"></parameter>
+		<classes>
+			<class name="module6.GitHubLogin_parameter" />
+		</classes>
+	</test> <!-- Test -->
+
 </suite> <!-- Suite -->

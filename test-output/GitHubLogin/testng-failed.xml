@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GitHubLogin]">
+  <test name="Testing GitHubLogin1(failed)">
+    <parameter name="B" value="Firefox"/>
+    <parameter name="Username" value="tabhresh@gmail.com"/>
+    <parameter name="Password" value="edureka123"/>
+    <classes>
+      <class name="module6.GitHubLogin_CrossBrowser">
+        <methods>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- module6.GitHubLogin_CrossBrowser -->
+    </classes>
+  </test> <!-- Testing GitHubLogin1(failed) -->
+  <test name="Testing GitHubLogin2(failed)">
+    <parameter name="Username" value="tabhresh@gmail.com"/>
+    <parameter name="Password" value="edureka123"/>
+    <classes>
+      <class name="module6.GitHubLogin_parameter">
+        <methods>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- module6.GitHubLogin_parameter -->
+    </classes>
+  </test> <!-- Testing GitHubLogin2(failed) -->
+</suite> <!-- Failed suite [GitHubLogin] -->

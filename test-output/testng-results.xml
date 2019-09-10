@@ -1,41 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="9" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21195" started-at="2019-09-09T16:57:23Z" finished-at="2019-09-09T16:57:45Z">
+  <suite name="Parallel_Execution_GitHubLogin" duration-ms="72117" started-at="2019-09-10T16:28:56Z" finished-at="2019-09-10T16:30:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21195" started-at="2019-09-09T16:57:23Z" finished-at="2019-09-09T16:57:45Z">
-      <class name="module6.Enabled">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:module6.Enabled@7e2d773b]" name="OpenBrowser" duration-ms="10337" started-at="2019-09-09T16:57:23Z" finished-at="2019-09-09T16:57:34Z">
+    <test name="Parallel_Execution_Testing_GitHubLogin1" duration-ms="42655" started-at="2019-09-10T16:28:56Z" finished-at="2019-09-10T16:29:38Z">
+      <class name="module6.GitHubLogin_CrossBrowser">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="openBrowser" duration-ms="10866" started-at="2019-09-10T21:58:56Z" finished-at="2019-09-10T21:59:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="OpenAUT()[pri:1, instance:module6.Enabled@7e2d773b]" name="OpenAUT" duration-ms="4359" started-at="2019-09-09T16:57:34Z" finished-at="2019-09-09T16:57:38Z">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="OpenAUT()[pri:1, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="OpenAUT" duration-ms="8942" started-at="2019-09-10T21:59:07Z" finished-at="2019-09-10T21:59:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenAUT -->
-        <test-method status="PASS" signature="ClickRegisterLink()[pri:6, instance:module6.Enabled@7e2d773b]" name="ClickRegisterLink" duration-ms="2379" started-at="2019-09-09T16:57:38Z" finished-at="2019-09-09T16:57:41Z">
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:2, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="Login" duration-ms="8333" started-at="2019-09-10T21:59:16Z" finished-at="2019-09-10T21:59:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tabhresh@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edureka123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickRegisterLink -->
-        <test-method status="PASS" signature="ClickContactUsLink()[pri:7, instance:module6.Enabled@7e2d773b]" name="ClickContactUsLink" duration-ms="1101" started-at="2019-09-09T16:57:41Z" finished-at="2019-09-09T16:57:42Z">
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Logout()[pri:3, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="Logout" duration-ms="6448" started-at="2019-09-10T21:59:24Z" finished-at="2019-09-10T21:59:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickContactUsLink -->
-        <test-method status="PASS" signature="ClickSupportLink()[pri:8, instance:module6.Enabled@7e2d773b]" name="ClickSupportLink" duration-ms="1162" started-at="2019-09-09T16:57:42Z" finished-at="2019-09-09T16:57:43Z">
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="CloseTestCase()[pri:4, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="CloseTestCase" duration-ms="7939" started-at="2019-09-10T21:59:30Z" finished-at="2019-09-10T21:59:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickSupportLink -->
-        <test-method status="PASS" signature="ClickSignOnLink()[pri:9, instance:module6.Enabled@7e2d773b]" name="ClickSignOnLink" duration-ms="1067" started-at="2019-09-09T16:57:43Z" finished-at="2019-09-09T16:57:44Z">
+        </test-method> <!-- CloseTestCase -->
+      </class> <!-- module6.GitHubLogin_CrossBrowser -->
+    </test> <!-- Parallel_Execution_Testing_GitHubLogin1 -->
+    <test name="Parallel_Execution_Testing_GitHubLogin2" duration-ms="29347" started-at="2019-09-10T16:29:38Z" finished-at="2019-09-10T16:30:08Z">
+      <class name="module6.GitHubLogin_parameter">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:module6.GitHubLogin_parameter@343f4d3d]" name="OpenBrowser" duration-ms="6941" started-at="2019-09-10T21:59:38Z" finished-at="2019-09-10T21:59:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickSignOnLink -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:20, instance:module6.Enabled@7e2d773b]" name="CloseBrowser" duration-ms="656" started-at="2019-09-09T16:57:44Z" finished-at="2019-09-09T16:57:45Z">
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="OpenAUT()[pri:1, instance:module6.GitHubLogin_parameter@343f4d3d]" name="OpenAUT" duration-ms="3800" started-at="2019-09-10T21:59:45Z" finished-at="2019-09-10T21:59:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- module6.Enabled -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- OpenAUT -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:2, instance:module6.GitHubLogin_parameter@343f4d3d]" name="Login" duration-ms="8607" started-at="2019-09-10T21:59:49Z" finished-at="2019-09-10T21:59:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tabhresh@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edureka123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Logout()[pri:3, instance:module6.GitHubLogin_parameter@343f4d3d]" name="Logout" duration-ms="5454" started-at="2019-09-10T21:59:58Z" finished-at="2019-09-10T22:00:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="CloseTestCase()[pri:4, instance:module6.GitHubLogin_parameter@343f4d3d]" name="CloseTestCase" duration-ms="4513" started-at="2019-09-10T22:00:03Z" finished-at="2019-09-10T22:00:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTestCase -->
+      </class> <!-- module6.GitHubLogin_parameter -->
+    </test> <!-- Parallel_Execution_Testing_GitHubLogin2 -->
+  </suite> <!-- Parallel_Execution_GitHubLogin -->
 </testng-results>

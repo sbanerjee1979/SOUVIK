@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Grouping Suite on NewTours]">
+  <test name="Grouping Test on NewTours(failed)">
+    <groups>
+      <run>
+        <include name="Setup"/>
+        <include name="LoginLogout"/>
+        <include name="LinkCheck"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="module6.Grouping1">
+        <methods>
+          <include name="ClickSignOnLink"/>
+          <include name="Logout"/>
+          <include name="ClickRegisterLink"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- module6.Grouping1 -->
+    </classes>
+  </test> <!-- Grouping Test on NewTours(failed) -->
+</suite> <!-- Failed suite [Grouping Suite on NewTours] -->
