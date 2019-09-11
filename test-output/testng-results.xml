@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel_Execution_GitHubLogin" duration-ms="72117" started-at="2019-09-10T16:28:56Z" finished-at="2019-09-10T16:30:08Z">
+  <suite name="GRID Parallel Testing" duration-ms="61174" started-at="2019-09-11T16:07:06Z" finished-at="2019-09-11T16:08:07Z">
     <groups>
     </groups>
-    <test name="Parallel_Execution_Testing_GitHubLogin1" duration-ms="42655" started-at="2019-09-10T16:28:56Z" finished-at="2019-09-10T16:29:38Z">
-      <class name="module6.GitHubLogin_CrossBrowser">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="openBrowser" duration-ms="10866" started-at="2019-09-10T21:58:56Z" finished-at="2019-09-10T21:59:07Z">
+    <test name="Chrome" duration-ms="55494" started-at="2019-09-11T16:07:06Z" finished-at="2019-09-11T16:08:02Z">
+      <class name="module7.GitHubLogin">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:module7.GitHubLogin@5e5792a0]" name="openBrowser" duration-ms="8309" started-at="2019-09-11T21:37:06Z" finished-at="2019-09-11T21:37:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[pc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="OpenAUT()[pri:1, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="OpenAUT" duration-ms="8942" started-at="2019-09-10T21:59:07Z" finished-at="2019-09-10T21:59:16Z">
+        <test-method status="PASS" signature="OpenAUT()[pri:2, instance:module7.GitHubLogin@5e5792a0]" name="OpenAUT" duration-ms="11919" started-at="2019-09-11T21:37:15Z" finished-at="2019-09-11T21:37:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenAUT -->
-        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:2, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="Login" duration-ms="8333" started-at="2019-09-10T21:59:16Z" finished-at="2019-09-10T21:59:24Z">
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:3, instance:module7.GitHubLogin@5e5792a0]" name="Login" duration-ms="16625" started-at="2019-09-11T21:37:27Z" finished-at="2019-09-11T21:37:43Z">
           <params>
             <param index="0">
               <value>
@@ -38,27 +38,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Logout()[pri:3, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="Logout" duration-ms="6448" started-at="2019-09-10T21:59:24Z" finished-at="2019-09-10T21:59:30Z">
+        <test-method status="PASS" signature="Logout()[pri:4, instance:module7.GitHubLogin@5e5792a0]" name="Logout" duration-ms="14567" started-at="2019-09-11T21:37:43Z" finished-at="2019-09-11T21:37:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method status="PASS" signature="CloseTestCase()[pri:4, instance:module6.GitHubLogin_CrossBrowser@5e5792a0]" name="CloseTestCase" duration-ms="7939" started-at="2019-09-10T21:59:30Z" finished-at="2019-09-10T21:59:38Z">
+        <test-method status="PASS" signature="CloseTestCase()[pri:5, instance:module7.GitHubLogin@5e5792a0]" name="CloseTestCase" duration-ms="3925" started-at="2019-09-11T21:37:58Z" finished-at="2019-09-11T21:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTestCase -->
-      </class> <!-- module6.GitHubLogin_CrossBrowser -->
-    </test> <!-- Parallel_Execution_Testing_GitHubLogin1 -->
-    <test name="Parallel_Execution_Testing_GitHubLogin2" duration-ms="29347" started-at="2019-09-10T16:29:38Z" finished-at="2019-09-10T16:30:08Z">
-      <class name="module6.GitHubLogin_parameter">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:module6.GitHubLogin_parameter@343f4d3d]" name="OpenBrowser" duration-ms="6941" started-at="2019-09-10T21:59:38Z" finished-at="2019-09-10T21:59:45Z">
+      </class> <!-- module7.GitHubLogin -->
+    </test> <!-- Chrome -->
+    <test name="Firefox" duration-ms="61174" started-at="2019-09-11T16:07:06Z" finished-at="2019-09-11T16:08:07Z">
+      <class name="module7.GitHubLogin">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:module7.GitHubLogin@42e26948]" name="openBrowser" duration-ms="8299" started-at="2019-09-11T21:37:06Z" finished-at="2019-09-11T21:37:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pc1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="OpenAUT()[pri:1, instance:module6.GitHubLogin_parameter@343f4d3d]" name="OpenAUT" duration-ms="3800" started-at="2019-09-10T21:59:45Z" finished-at="2019-09-10T21:59:49Z">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="OpenAUT()[pri:2, instance:module7.GitHubLogin@42e26948]" name="OpenAUT" duration-ms="17089" started-at="2019-09-11T21:37:15Z" finished-at="2019-09-11T21:37:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenAUT -->
-        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:2, instance:module6.GitHubLogin_parameter@343f4d3d]" name="Login" duration-ms="8607" started-at="2019-09-10T21:59:49Z" finished-at="2019-09-10T21:59:58Z">
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:3, instance:module7.GitHubLogin@42e26948]" name="Login" duration-ms="16575" started-at="2019-09-11T21:37:32Z" finished-at="2019-09-11T21:37:48Z">
           <params>
             <param index="0">
               <value>
@@ -74,15 +81,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Logout()[pri:3, instance:module6.GitHubLogin_parameter@343f4d3d]" name="Logout" duration-ms="5454" started-at="2019-09-10T21:59:58Z" finished-at="2019-09-10T22:00:03Z">
+        <test-method status="PASS" signature="Logout()[pri:4, instance:module7.GitHubLogin@42e26948]" name="Logout" duration-ms="14410" started-at="2019-09-11T21:37:48Z" finished-at="2019-09-11T21:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method status="PASS" signature="CloseTestCase()[pri:4, instance:module6.GitHubLogin_parameter@343f4d3d]" name="CloseTestCase" duration-ms="4513" started-at="2019-09-10T22:00:03Z" finished-at="2019-09-10T22:00:08Z">
+        <test-method status="PASS" signature="CloseTestCase()[pri:5, instance:module7.GitHubLogin@42e26948]" name="CloseTestCase" duration-ms="4677" started-at="2019-09-11T21:38:03Z" finished-at="2019-09-11T21:38:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTestCase -->
-      </class> <!-- module6.GitHubLogin_parameter -->
-    </test> <!-- Parallel_Execution_Testing_GitHubLogin2 -->
-  </suite> <!-- Parallel_Execution_GitHubLogin -->
+      </class> <!-- module7.GitHubLogin -->
+    </test> <!-- Firefox -->
+  </suite> <!-- GRID Parallel Testing -->
 </testng-results>

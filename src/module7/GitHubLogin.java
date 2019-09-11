@@ -1,63 +1,71 @@
-package module6;
+package module7;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class GitHubLogin_parameter {
+public class GitHubLogin {
 
 	WebDriver driver;
-
+	
+	@Parameters("System")
 	@Test(priority = 0)
-	public void OpenBrowser() {
-		// Open Browser
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Nikasio\\Box\\Laptop Space\\Training\\Installation_stuff\\BrowserDrivers\\chromedriver_76.exe");
-		driver = new ChromeDriver();
-	}
+	public void openBrowser(String device) throws MalformedURLException {
+		if (device.equalsIgnoreCase("pc1")) {
+			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			driver = new RemoteWebDriver(new URL("http://192.168.1.157:4646/wd/hub"), cap);
 
-	@Test(priority = 1)
+		} else if (device.equalsIgnoreCase("pc2")) {
+			DesiredCapabilities cap = DesiredCapabilities.firefox();
+			driver = new RemoteWebDriver(new URL("http://192.168.1.55:4747/wd/hub"), cap);
+		}
+	}
+	
+	@Test(priority = 2)
 	public void OpenAUT() {
 
 		driver.get("https://github.com/");
-
+		
 	}
 
-	@Parameters({ "Username", "Password" })
-	@Test(priority = 2)
+	@Parameters ({"Username", "Password"})
+	@Test(priority = 3)
 	public void Login(String UName, String Pass) throws InterruptedException {
 
 		driver.findElement(By.xpath("//*[@href='/login']")).click();
-
+		
 		Thread.sleep(3000);
-
+		
 		driver.findElement(By.id("login_field")).sendKeys(UName);
-
+		
 		driver.findElement(By.id("password")).sendKeys(Pass);
-
+		
 		driver.findElement(By.name("commit")).click();
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void Logout() throws InterruptedException {
 
 		Thread.sleep(3000);
-
+		
 		driver.findElement(By.xpath("//*[@aria-label='View profile and more' and @aria-haspopup='menu']")).click();
 
 		driver.findElement(By.xpath("//*[@aria-label='View profile and more' and @aria-haspopup='menu']//following::button[15]")).click();
+				
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void CloseTestCase() throws InterruptedException {
 
 		Thread.sleep(3000);
-
-		driver.quit();
-
+		
+		driver.quit();	
 	}
-
 }

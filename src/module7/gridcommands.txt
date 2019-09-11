@@ -1,0 +1,19 @@
+Hub Command:
+java -jar selenium-server-standalone-3.4.0.jar -role hub -port 4545
+
+Node Command:
+
+java -Dwebdriver.chrome.driver="C:\Users\Nikasio\Box\Laptop Space\Training\Installation_stuff\BrowserDrivers\chromedriver_76.exe" -jar selenium-server-standalone-3.4.0.jar -role node -hub http://192.168.1.55:4545/grid/register -port 4646
+
+java -Dwebdriver.gecko.driver="C:\Users\Nikasio\Box\Laptop Space\Training\Installation_stuff\BrowserDrivers\geckodriver_0.24.exe" -jar selenium-server-standalone-3.4.0.jar -role node -hub http://192.168.1.55:4545/grid/register -port 4747
+
+java -Dwebdriver.chrome.driver="C:\Users\Nikasio\Box\Laptop Space\Training\Installation_stuff\BrowserDrivers\chromedriver_76.exe" -Dwebdriver.gecko.driver="C:\Users\Nikasio\Box\Laptop Space\Training\Installation_stuff\BrowserDrivers\geckodriver_0.24.exe" -jar selenium-server-standalone-3.4.0.jar -role node -hub http://192.168.1.55:4444/grid/register -port 4747
+
+
+
+java -jar selenium-server-standalone-3.4.0.jar -role hub
+
+http://192.168.1.55:4444/grid/register
+
+
+java -Dwebdriver.chrome.driver="C:\Users\Nikasio\Box\Laptop Space\Training\Installation_stuff\BrowserDrivers\chromedriver_76.exe" -jar selenium-server-standalone-3.4.0.jar -role node -hub http://192.168.1.55:4444/grid/register -port 4545
