@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel_Execution_GitHubLogin]" parallel="tests">
-  <test name="Parallel_Execution_Testing_GitHubLogin2(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel_Execution_GitHubLogin]">
+  <parameter name="B" value="Firefox"/>
+  <parameter name="Username" value="tabhresh@gmail.com"/>
+  <parameter name="Password" value="edureka123"/>
+  <test name="Parallel_Execution_Testing_GitHubLogin1(failed)">
+    <parameter name="B" value="Firefox"/>
+    <parameter name="Username" value="tabhresh@gmail.com"/>
+    <parameter name="Password" value="edureka123"/>
+    <classes>
+      <class name="module6.GitHubLogin_CrossBrowser">
+        <methods>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- module6.GitHubLogin_CrossBrowser -->
+    </classes>
+  </test> <!-- Parallel_Execution_Testing_GitHubLogin1(failed) -->
+  <test name="Parallel_Execution_Testing_GitHubLogin2(failed)">
     <parameter name="Username" value="tabhresh@gmail.com"/>
     <parameter name="Password" value="edureka123"/>
     <classes>
       <class name="module6.GitHubLogin_parameter">
         <methods>
           <include name="Logout"/>
-          <include name="Login" invocation-numbers="0"/>
         </methods>
       </class> <!-- module6.GitHubLogin_parameter -->
     </classes>
