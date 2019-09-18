@@ -30,7 +30,6 @@ public class KeyboardMouseActions {
 		WebElement Fname = driver.findElement(By.name("ts_first_name"));
 		/*
 		Actions act = new Actions(driver);
-
 		act
 		.keyDown(Fname, Keys.SHIFT)
 		.sendKeys(" abhresh")
